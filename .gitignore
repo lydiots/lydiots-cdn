@@ -1,0 +1,27 @@
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Git LFS related
+.git/lfs/
+
+# Build/processing artifacts (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backup files
+*.bak
+*.backup

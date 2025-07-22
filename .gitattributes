@@ -7,8 +7,15 @@
 *.tiff filter=lfs diff=lfs merge=lfs -text
 *.tif filter=lfs diff=lfs merge=lfs -text
 
-# Large images (> 1MB typically)
-# You can add specific large image files here as needed
+# Large PNG files (sprites, textures, etc.) - uncomment patterns as needed
+# For character sprites: track individual large files or use size-based approach
+# *.png filter=lfs diff=lfs merge=lfs -text  # Uncomment to track ALL PNG files
+# sprites/*.png filter=lfs diff=lfs merge=lfs -text  # Track PNG files in sprites directory
+# **/sprites/**/*.png filter=lfs diff=lfs merge=lfs -text  # Track sprites in any sprites folder
+
+# Large individual images (add specific large files here)
+# large-background.png filter=lfs diff=lfs merge=lfs -text
+# character-sheet-4k.png filter=lfs diff=lfs merge=lfs -text
 
 # Videos
 *.mp4 filter=lfs diff=lfs merge=lfs -text
